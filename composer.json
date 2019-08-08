@@ -1,0 +1,14 @@
+{
+    "name": "babel/summer",
+    "description": "A RESTful framework for babel",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Morty Zhu",
+            "email": "phpzjw2016@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    }
+}
