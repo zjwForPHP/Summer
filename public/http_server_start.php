@@ -93,6 +93,8 @@ class http_server_start
 
                 ob_end_clean();
 
+                $response->header('Content-Type', 'text/html; charset=utf8');//输出为utf-8编码模式
+
                 $response->end($result);
             });
 
