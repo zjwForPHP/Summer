@@ -2,6 +2,8 @@
     "name": "babel/summer",
     "description": "A RESTful framework for babel",
     "type": "project",
+    "keywords": ["framework", "Summer"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Morty Zhu",
@@ -10,5 +12,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": ">=7.0.0"
     }
 }
