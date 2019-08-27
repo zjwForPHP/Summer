@@ -4,6 +4,7 @@
     "type": "project",
     "keywords": ["framework", "Summer"],
     "license": "MIT",
+    "version":"v1.1.1",
     "authors": [
         {
             "name": "Morty Zhu",
