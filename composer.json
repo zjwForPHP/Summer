@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.1.0",
-        "yaf": ">=3.0.0",
-        "swoole": ">=4.3.0"
+        "laruence/yaf": ">=3.0.0",
+        "swoole/swoole-src": ">=4.3.0"
     }
 }
