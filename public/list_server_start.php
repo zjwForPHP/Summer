@@ -24,8 +24,8 @@ class list_server_start
 {
 
 
-    public function __construct() {
-        $serv = new Server('127.0.0.1', 10086, SWOOLE_PROCESS, SWOOLE_SOCK_TCP);
+    public function __construct($config_info) {
+        $serv = new Server($config_info['list']['host'], $config_info['list']['port'], SWOOLE_PROCESS, SWOOLE_SOCK_TCP);
         $serv->setHandler('lpush', function ($fd, $data) use ($serv) {
             $cli = new Redis();
             $cli->connect('127.0.0.1', 6379);
@@ -45,7 +45,7 @@ class list_server_start
 
 // 启动 server
 
-$run = new list_server_start();
+$run = new list_server_start($config_info);
 
 /*use Swoole\Redis\Server;
 use Swoole\Coroutine\Redis;
