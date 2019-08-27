@@ -12,6 +12,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.1.0",
+        "yaf": ">=3.0.0",
+        "swoole": ">=4.3.0"
     }
 }
