@@ -13,3 +13,14 @@ function _initTcpConfig()
     require '../server/TcpServer.php';
     require '../application/library/DataBase.php';
 }
+
+function loadJob($class){
+    $class=str_replace('\\', '/', $class);
+    $class="/application/Job/".$class.".php";
+    require_once APP_PATH.$class;
+}
+
+if(LOAD_JOB == 1)
+{
+    spl_autoload_register('loadJob');
+}
