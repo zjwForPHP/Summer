@@ -2,12 +2,14 @@
 use EasyWeChat\Factory;
 use Api\CouponModel;
 
-class DemoController extends Yaf\Controller_Abstract {
+class DemoController extends Yaf\Controller_Abstract
+{
 
     /**
      * 初始化执行，关闭视图
      */
-    public function init(){
+    public function init()
+    {
 
         Yaf\Dispatcher::getInstance()->disableView();
     }

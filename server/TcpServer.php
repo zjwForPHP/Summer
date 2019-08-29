@@ -11,7 +11,8 @@ class TcpServer
      * @param $server
      * @param $fd
      */
-    public static function deal_connect($server, $fd){
+    public static function deal_connect($server, $fd)
+    {
         echo "Client: Connect.\n";
     }
 
@@ -21,7 +22,8 @@ class TcpServer
      * @param $from_id
      * @param $data   接受的数据
      */
-    public static function deal_receive($server, $fd, $from_id, $data){
+    public static function deal_receive($server, $fd, $from_id, $data)
+    {
         $server->send($fd, "Server: ".$data);
     }
 
@@ -30,7 +32,8 @@ class TcpServer
      * @param $server
      * @param $fd
      */
-    public static function deal_close($server, $fd){
+    public static function deal_close($server, $fd)
+    {
         echo "Client: Close.\n";
     }
 }
