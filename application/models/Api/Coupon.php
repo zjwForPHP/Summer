@@ -1,7 +1,7 @@
 <?php
-namespace Api;
+namespace Model\Api;
 
-use BaseModel;
+use Model\BaseModel\BaseModel;
 
 class CouponModel extends  BaseModel{
 

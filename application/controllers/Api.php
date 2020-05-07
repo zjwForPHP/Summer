@@ -1,6 +1,8 @@
 <?php
+namespace Controller\Api;
+
 use EasyWeChat\Factory;
-use Api\CouponModel;
+use Model\Api\CouponModel;
 
 class ApiController extends Yaf\Controller_Abstract
 {
