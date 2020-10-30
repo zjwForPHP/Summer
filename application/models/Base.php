@@ -1,5 +1,5 @@
 <?php
-namespace Model\BaseModel;
+
 
 class BaseModel {
 
